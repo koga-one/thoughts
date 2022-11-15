@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-LightItalic.woff2') format('woff2'),
+        url('Haskoy-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-ExtraLight.woff2') format('woff2'),
+        url('Haskoy-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-ExtraBold.woff2') format('woff2'),
+        url('Haskoy-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-ExtraBoldItalic.woff2') format('woff2'),
+        url('Haskoy-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-BoldItalic.woff2') format('woff2'),
+        url('Haskoy-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-Light.woff2') format('woff2'),
+        url('Haskoy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-Italic.woff2') format('woff2'),
+        url('Haskoy-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-Bold.woff2') format('woff2'),
+        url('Haskoy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-ExtraLightItalic.woff2') format('woff2'),
+        url('Haskoy-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-Regular.woff2') format('woff2'),
+        url('Haskoy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-Medium.woff2') format('woff2'),
+        url('Haskoy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-SemiBold.woff2') format('woff2'),
+        url('Haskoy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-MediumItalic.woff2') format('woff2'),
+        url('Haskoy-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-SemiBoldItalic.woff2') format('woff2'),
+        url('Haskoy-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-Thin.woff2') format('woff2'),
+        url('Haskoy-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url('Haskoy-ThinItalic.woff2') format('woff2'),
+        url('Haskoy-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+

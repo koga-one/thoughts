@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-BoldItalic.woff2') format('woff2'),
+        url('Alvarado-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Light.woff2') format('woff2'),
+        url('Alvarado-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Bold.woff2') format('woff2'),
+        url('Alvarado-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Bold.woff2') format('woff2'),
+        url('Alvarado-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-BoldItalic.woff2') format('woff2'),
+        url('Alvarado-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Light.woff2') format('woff2'),
+        url('Alvarado-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-RegularItalic.woff2') format('woff2'),
+        url('Alvarado-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Regular.woff2') format('woff2'),
+        url('Alvarado-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Regular.woff2') format('woff2'),
+        url('Alvarado-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-LightItalic.woff2') format('woff2'),
+        url('Alvarado-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-MediumItalic.woff2') format('woff2'),
+        url('Alvarado-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-LightItalic.woff2') format('woff2'),
+        url('Alvarado-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-MediumItalic.woff2') format('woff2'),
+        url('Alvarado-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Medium.woff2') format('woff2'),
+        url('Alvarado-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-Medium.woff2') format('woff2'),
+        url('Alvarado-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alvarado';
+    src: url('Alvarado-RegularItalic.woff2') format('woff2'),
+        url('Alvarado-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

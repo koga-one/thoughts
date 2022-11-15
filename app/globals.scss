@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./fonts.scss";
+
 html,
 body {
   padding: 0;
   margin: 0;
+  @apply bg-orange-50 text-stone-800 dark:bg-slate-800 dark:text-slate-100;
 }
 
 a {
@@ -21,12 +24,6 @@ p {
   @apply leading-[1em];
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background-color: black;
-  }
+.bordered {
+  @apply rounded-3xl border-2 border-dashed border-stone-800 transition-all hover:rounded-none dark:border-stone-100;
 }

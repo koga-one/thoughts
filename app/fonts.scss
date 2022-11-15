@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-BoldItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Light.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Bold.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Bold.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-BoldItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Light.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-RegularItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Regular.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Regular.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-LightItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-MediumItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-LightItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-MediumItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Medium.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-Medium.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alvarado";
+  src: url("/fonts/alvarado/Alvarado-RegularItalic.woff2") format("woff2"),
+    url("/fonts/alvarado/Alvarado-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dalfitra";
+  src: url("/fonts/dalfitra/Dalfitra.woff2") format("woff2"),
+    url("/fonts/dalfitra/Dalfitra.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-LightItalic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-ExtraLight.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-ExtraBold.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-ExtraBoldItalic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-BoldItalic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-Light.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-Italic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-Bold.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-ExtraLightItalic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-Regular.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-Medium.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-SemiBold.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-MediumItalic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-SemiBoldItalic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-Thin.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Haskoy";
+  src: url("/fonts/haskoy/Haskoy-ThinItalic.woff2") format("woff2"),
+    url("/fonts/haskoy/Haskoy-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}

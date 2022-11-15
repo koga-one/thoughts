@@ -1,4 +1,5 @@
 import "./globals.scss";
+import Header from "../components/Header";
 
 export default function RootLayout({
   children,
@@ -20,7 +21,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
