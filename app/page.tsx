@@ -1,9 +1,24 @@
-import Card from "../components/Card";
+import Book from "../components/Book";
+import Folder from "../components/Folder";
+import { createClient } from "next-sanity";
+import Markdown from "../components/Markdown";
 
-export default function Page() {
+const client = createClient({
+  projectId: "vl490xep",
+  dataset: "production",
+  apiVersion: "2022-11-16",
+  useCdn: false,
+});
+
+export default async function Page() {
+  const data = await client.fetch(`*[_type == "folder"][0]`);
+  console.log(data);
+
   return (
-    <div className="m-2 grid grid-cols-1 gap-2 md:m-4 md:grid-cols-3 md:gap-4 lg:grid-cols-4">
-      <Card />
+    <div className="m-1 grid grid-cols-12">
+      <Markdown data={data.text} />
+      <Book />
+      <Folder link="test" />
     </div>
   );
 }
