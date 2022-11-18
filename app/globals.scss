@@ -8,6 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  @apply bg-back text-front;
 }
 
 a {
@@ -24,5 +25,5 @@ p {
 }
 
 .bordered {
-  @apply rounded-3xl border-2 border-dashed transition-all hover:rounded-none;
+  @apply rounded-3xl border-2 border-dashed border-front transition-all hover:rounded-none;
 }

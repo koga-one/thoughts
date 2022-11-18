@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      "front": "#aaa",
-      "back": "#555"
+      front: "#444",
+      back: "#bbb",
     },
     fontFamily: {
       serif: ["Alvarado", "serif"],

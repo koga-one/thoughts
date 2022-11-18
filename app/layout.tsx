@@ -21,7 +21,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body>
+      <body className="container mx-auto my-2 px-2">
         <Header />
         <main>{children}</main>
       </body>

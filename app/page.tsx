@@ -1,15 +1,14 @@
-import { createClient } from "next-sanity";
-
-const client = createClient({
-  projectId: "vl490xep",
-  dataset: "production",
-  apiVersion: "2022-11-16",
-  useCdn: false,
-});
+import Book from "../components/Book";
+import { client } from "./sanityClient";
 
 export default async function Page() {
-  const data = await client.fetch(`*[_type == "folder"][0]`);
-  console.log(data);
+  const books = await client.fetch(`*[_type == "book"]`);
 
-  return <div className="m-1 grid grid-cols-12"></div>;
+  return (
+    <div className="m-1 grid grid-cols-6">
+      {books.map((book: any, idx: number) => {
+        return <Book key={idx} data={book} />;
+      })}
+    </div>
+  );
 }
