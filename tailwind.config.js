@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      "front": "#aaa",
+      "back": "#555"
+    },
     fontFamily: {
       serif: ["Alvarado", "serif"],
       display: ["Dalfitra", "serif"],
