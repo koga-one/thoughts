@@ -17,5 +17,5 @@ module.exports = {
       sans: ["Haskoy", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
