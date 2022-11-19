@@ -2,9 +2,8 @@ import { client } from "../sanityClient";
 import { NextPage } from "next";
 import { use } from "react";
 import BookPage from "../../components/BookPage";
-import { usePathname } from "next/navigation";
 
-const postsPerPage = 8;
+const postsPerPage = 15;
 
 type Props = {
   params: any;
@@ -13,24 +12,28 @@ type Props = {
 
 const Page: NextPage<Props> = ({ params, searchParams }) => {
   const slug = params.slug;
-  // if (searchParams["page"] === undefined) {
-  //   usePathname.name
-  // } else {
-  //   let idx = parseInt(searchParams["page"]);
-  // }
-  // if (isNaN(idx)) idx = 0;
+  let pageIdx = 0;
+
+  if (!isNaN(parseInt(searchParams["page"]))) pageIdx = searchParams["page"];
 
   let { pages } = use(
     client.fetch(`*[_type == "book" && slug.current == $slug][0]{pages}`, {
       slug,
     })
   );
-  // pages = pages.slice(idx * postsPerPage, (idx + 1) * postsPerPage);
+  pages = pages.slice(pageIdx * postsPerPage, (pageIdx + 1) * postsPerPage);
 
   return (
-    <div className="m-1 grid grid-cols-4 gap-4">
-      {pages.map((post: any) => {
-        return <BookPage data={post} />;
+    <div className="m-1 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+      {pages.map((post: any, idx: number) => {
+        return (
+          <BookPage
+            slug={slug}
+            key={idx}
+            data={post}
+            idx={1 + pageIdx * postsPerPage + idx}
+          />
+        );
       })}
     </div>
   );
