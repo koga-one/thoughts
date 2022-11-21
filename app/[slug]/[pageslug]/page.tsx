@@ -1,5 +1,4 @@
 import { PortableText, PortableTextReactComponents } from "@portabletext/react";
-import { NextPage } from "next";
 import Image from "next/image";
 import { use } from "react";
 import { client } from "../../sanityClient";
@@ -11,10 +10,6 @@ const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
   return builder.image(source);
 }
-
-type Props = {
-  params: any;
-};
 
 const components: Partial<PortableTextReactComponents> = {
   types: {
@@ -30,7 +25,7 @@ const components: Partial<PortableTextReactComponents> = {
   },
 };
 
-const Page: NextPage<Props> = ({ params }) => {
+const Page = ({ params }: { params: any }) => {
   const slug = params.slug;
   const title = params.pageslug;
   const { pages } = use(
