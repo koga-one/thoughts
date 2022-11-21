@@ -39,8 +39,8 @@ const Page = ({ params }: { params: any }) => {
   );
 
   return (
-    <div className="prose-settings prose prose-base relative mx-auto overflow-hidden rounded-2xl bg-front p-6 text-back lg:prose-lg">
-      <h1 className="font-serif">{pages.title}</h1>
+    <div className="prose-settings prose prose-base relative mx-auto overflow-hidden rounded-2xl bg-front p-3 text-back sm:p-4 md:p-6 lg:prose-lg">
+      <h1 className="pt-2 font-serif">{pages.title}</h1>
       <PortableText value={pages.text} components={components} />
     </div>
   );

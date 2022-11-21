@@ -38,11 +38,13 @@ export default function Header() {
     );
   } else {
     return (
-      <div className="mb-4 inline-block transition-all">
-        <div className="bordered grid grid-flow-col items-center gap-2 overflow-hidden bg-back p-1.5">
+      <div className="mb-4 inline-block overflow-hidden transition-all">
+        <div className="bordered items-center overflow-hidden bg-back p-1.5">
           <Link href="/">
             <div className="rounded-2xl bg-front px-2 pt-1 pb-0 transition-all hover:rounded-none">
-              <h1 className="font-display text-4xl text-back">thoughts.</h1>
+              <h1 className="font-display text-xl text-back sm:text-2xl md:text-3xl lg:text-4xl">
+                thoughts.
+              </h1>
             </div>
           </Link>
         </div>
