@@ -1,13 +1,52 @@
+import { PortableText, PortableTextReactComponents } from "@portabletext/react";
 import { NextPage } from "next";
+import Image from "next/image";
+import { use } from "react";
+import { client } from "../../sanityClient";
+import imageUrlBuilder from "@sanity/image-url";
+import "./prose.scss";
+
+const builder = imageUrlBuilder(client);
+
+function urlFor(source: any) {
+  return builder.image(source);
+}
 
 type Props = {
   params: any;
 };
 
+const components: Partial<PortableTextReactComponents> = {
+  types: {
+    image: ({ value }: { value: any }) => (
+      <Image
+        src={urlFor(value).quality(90).url()}
+        alt=""
+        width={512}
+        height={0}
+        className="w-full rounded-lg"
+      />
+    ),
+  },
+};
+
 const Page: NextPage<Props> = ({ params }) => {
+  const slug = params.slug;
+  const title = params.pageslug;
+  const { pages } = use(
+    client.fetch(
+      `*[_type == "book" && slug.current == $slug][0]{pages[slug.current == $title][0]}`,
+      {
+        slug,
+        title,
+      }
+    )
+  );
+
   return (
-    <div>
-      {params.slug}/{params.pageslug}
+    <div className="prose-settings prose prose-base relative mx-auto overflow-hidden rounded-2xl bg-front p-6 text-back lg:prose-lg">
+      <h1 className="font-serif">{pages.title}</h1>
+      <PortableText value={pages.text} components={components} />
     </div>
   );
 };
