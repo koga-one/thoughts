@@ -24,7 +24,7 @@ const Page: NextPage<Props> = ({ params, searchParams }) => {
   pages = pages.slice(pageIdx * postsPerPage, (pageIdx + 1) * postsPerPage);
 
   return (
-    <div className="m-1 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+    <div className="m-1 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:grid-cols-6">
       {pages.map((post: any, idx: number) => {
         return (
           <BookPage
