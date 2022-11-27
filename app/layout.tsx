@@ -22,11 +22,13 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className="container mx-auto my-1 min-h-screen px-1 md:my-2 md:px-2">
-        <Header />
-        <main>{children}</main>
+      <body>
+        <div className="container mx-auto my-1 min-h-screen px-1 md:my-2 md:px-2">
+          <Header />
+          <main>{children}</main>
+        </div>
+        <Footer />
       </body>
-      <Footer />
     </html>
   );
 }

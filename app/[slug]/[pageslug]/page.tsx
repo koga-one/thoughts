@@ -3,7 +3,6 @@ import Image from "next/image";
 import { use } from "react";
 import { client } from "../../sanityClient";
 import imageUrlBuilder from "@sanity/image-url";
-import "./prose.scss";
 
 const builder = imageUrlBuilder(client);
 
@@ -38,8 +37,11 @@ const Page = ({ params }: { params: any }) => {
     )
   );
 
+  console.log(pages._createdAt);
+
   return (
-    <div className="prose-settings prose prose-base relative my-1 mx-auto overflow-hidden rounded-2xl bg-front p-3 text-back sm:p-4 md:p-5 lg:prose-lg">
+    <div className="contents">
+      {pages._createdAt}
       <h1 className="pt-2 font-serif">{pages.title}</h1>
       <PortableText value={pages.text} components={components} />
     </div>
