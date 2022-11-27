@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div>
       <div className="flex place-content-center items-center pt-8">
-        <a href="https://koga.one" target={"_blank"}>
+        <a href="https://koga.one" rel="noreferrer" target={"_blank"}>
           <p className="bordered m-2 py-1 px-3 text-center font-serif text-lg hover:underline">
             check my other projects!
           </p>
