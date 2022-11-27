@@ -1,5 +1,6 @@
 import "./globals.scss";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function RootLayout({
   children,
@@ -21,10 +22,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className="container mx-auto my-1 px-1 md:my-2 md:px-2">
+      <body className="container mx-auto my-1 min-h-screen px-1 md:my-2 md:px-2">
         <Header />
         <main>{children}</main>
       </body>
+      <Footer />
     </html>
   );
 }
