@@ -69,7 +69,8 @@ const Page = ({ params }: { params: any }) => {
       <h1 className="pt-2 font-serif">{post.title}</h1>
       <PortableText value={post.text} components={components} />
       <time className="text-xs italic opacity-70">
-        {createdAt.getHours()}:{createdAt.getMinutes()} -{" "}
+        {String(createdAt.getHours()).padStart(2, "0")}:
+        {String(createdAt.getMinutes()).padStart(2, "0")} -{" "}
         {monthNames[createdAt.getMonth()]} {ordinal(createdAt.getDate())},{" "}
         {createdAt.getFullYear()}
       </time>
