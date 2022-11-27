@@ -25,25 +25,17 @@ const components: Partial<PortableTextReactComponents> = {
 };
 
 const Page = ({ params }: { params: any }) => {
-  const slug = params.slug;
   const title = params.pageslug;
-  const { pages } = use(
-    client.fetch(
-      `*[_type == "book" && slug.current == $slug][0]{pages[slug.current == $title][0]}`,
-      {
-        slug,
-        title,
-      }
-    )
+  const post = use(
+    client.fetch(`*[_type == "post" && slug.current == $title][0]`, {
+      title,
+    })
   );
-
-  console.log(pages._createdAt);
 
   return (
     <div className="contents">
-      {pages._createdAt}
-      <h1 className="pt-2 font-serif">{pages.title}</h1>
-      <PortableText value={pages.text} components={components} />
+      <h1 className="pt-2 font-serif">{post.title}</h1>
+      <PortableText value={post.text} components={components} />
     </div>
   );
 };

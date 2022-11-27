@@ -17,11 +17,12 @@ const Page: NextPage<Props> = ({ params, searchParams }) => {
   if (!isNaN(parseInt(searchParams["page"]))) pageIdx = searchParams["page"];
 
   let { pages } = use(
-    client.fetch(`*[_type == "book" && slug.current == $slug][0]{pages}`, {
+    client.fetch(`*[_type == "book" && slug.current == $slug][0]{pages[]->}`, {
       slug,
     })
   );
   pages = pages.slice(pageIdx * postsPerPage, (pageIdx + 1) * postsPerPage);
+  console.log(pages);
 
   return (
     <div className="m-1 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:grid-cols-6">
