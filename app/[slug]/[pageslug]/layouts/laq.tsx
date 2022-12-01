@@ -69,10 +69,27 @@ export default function laq({ post }: { post: any }) {
   const createdAt = new Date(post._createdAt);
 
   return (
-    <section className="prose mx-auto overflow-hidden rounded-2xl bg-[#000]">
+    <section className="prose mx-auto overflow-hidden rounded-xl bg-[#000]">
       <PortableText value={post.pieces[0].text} components={components} />
       <div className="prose-base relative mx-auto p-3 text-[#eee] prose-headings:font-serif prose-headings:text-[#eee] sm:p-4 md:p-5 lg:prose-lg">
-        <h1>{post.title}</h1>
+        <h1 className="relative">
+          <span className="absolute left-0 -translate-x-full opacity-20">
+            {post.title}
+          </span>
+          {post.title}
+          <span className="opacity-20">
+            {post.title}
+            {post.title}
+            {post.title}
+            {post.title}
+            {post.title}
+            {post.title}
+            {post.title}
+            {post.title}
+            {post.title}
+            {post.title}
+          </span>
+        </h1>
         <PortableText value={post.pieces[1].text} components={components} />
         <time className="text-xs italic opacity-70">
           {String(createdAt.getHours()).padStart(2, "0")}:
@@ -80,6 +97,11 @@ export default function laq({ post }: { post: any }) {
           {monthNames[createdAt.getMonth()]} {ordinal(createdAt.getDate())},{" "}
           {createdAt.getFullYear()}
         </time>
+      </div>
+      <div className="bg-front">
+        <p className="m-0 px-2 py-1 text-center text-xs font-bold uppercase italic text-back">
+          ...each fragment has a song that is somehow connected to it...
+        </p>
       </div>
     </section>
   );
