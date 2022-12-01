@@ -23,7 +23,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <div className="container mx-auto my-1 min-h-screen px-1 md:my-2 md:px-2">
+        <div className="container mx-auto my-2 min-h-screen px-1 md:px-2">
           <Header />
           <main>{children}</main>
         </div>

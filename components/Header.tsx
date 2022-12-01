@@ -6,13 +6,12 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const path = usePathname();
-
   if (path && path != "/") {
     const paths = path.split("/").slice(1);
     const steps = SetSteps(path.split("/").slice(1));
 
     return (
-      <div className="mb-1 inline-block overflow-hidden transition-all">
+      <div className="inline-block overflow-hidden transition-all">
         <div className="bordered grid grid-flow-col items-center overflow-hidden bg-back p-1.5 pr-4">
           <Link href="/">
             <div className="rounded-2xl bg-front px-2 pt-1 pb-0 transition-all hover:rounded-none">
@@ -38,7 +37,7 @@ export default function Header() {
     );
   } else {
     return (
-      <div className="mb-1 inline-block overflow-hidden transition-all">
+      <div className="inline-block overflow-hidden transition-all">
         <div className="bordered items-center overflow-hidden bg-back p-1.5">
           <Link href="/">
             <div className="rounded-2xl bg-front px-2 pt-1 pb-0 transition-all hover:rounded-none">
