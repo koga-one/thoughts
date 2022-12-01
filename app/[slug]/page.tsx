@@ -28,7 +28,7 @@ const Page: NextPage<Props> = ({ params, searchParams }) => {
   pages = pages.slice(pageIdx * postsPerPage, (pageIdx + 1) * postsPerPage);
 
   return (
-    <div className="m-1 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:grid-cols-6">
+    <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:grid-cols-6">
       <div className="prose prose-base col-span-2 max-w-none overflow-hidden rounded bg-front px-3 py-4 text-back prose-headings:font-serif prose-headings:text-back md:col-span-4 lg:col-span-6 lg:prose-lg">
         <h1>{title}</h1>
         <PortableText value={description} />
