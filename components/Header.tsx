@@ -22,8 +22,11 @@ export default function Header() {
           </Link>
           {steps.map((step, idx) => {
             return (
-              <div className="ml-1 grid items-center rounded-2xl border-2 border-front px-1.5 py-0.5 transition-all hover:rounded-none">
-                <Link key={idx} href={"/" + step}>
+              <div
+                key={idx}
+                className="ml-1 grid items-center rounded-2xl border-2 border-front px-1.5 py-0.5 transition-all hover:rounded-none"
+              >
+                <Link href={"/" + step}>
                   <h2 className="font-serif text-sm italic sm:text-lg md:text-xl lg:text-2xl">
                     <span className="whitespace-nowrap">{paths[idx]}</span>
                   </h2>

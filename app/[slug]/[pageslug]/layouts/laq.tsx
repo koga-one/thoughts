@@ -69,9 +69,9 @@ export default function laq({ post }: { post: any }) {
   const createdAt = new Date(post._createdAt);
 
   return (
-    <section className="prose mx-auto">
+    <section className="prose mx-auto overflow-hidden rounded-2xl bg-[#000]">
       <PortableText value={post.pieces[0].text} components={components} />
-      <div className="prose-base relative mx-auto overflow-hidden rounded-xl bg-[#000] p-3 text-[#eee] prose-headings:font-serif prose-headings:text-[#eee] sm:p-4 md:p-5 lg:prose-lg">
+      <div className="prose-base relative mx-auto p-3 text-[#eee] prose-headings:font-serif prose-headings:text-[#eee] sm:p-4 md:p-5 lg:prose-lg">
         <h1>{post.title}</h1>
         <PortableText value={post.pieces[1].text} components={components} />
         <time className="text-xs italic opacity-70">
