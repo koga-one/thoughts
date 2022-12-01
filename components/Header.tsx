@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
       <div className="inline-block overflow-hidden transition-all">
-        <div className="bordered grid grid-flow-col items-center overflow-hidden bg-back p-1.5 pr-4">
+        <div className="bordered flex items-stretch overflow-hidden bg-back p-1.5">
           <Link href="/">
             <div className="rounded-2xl bg-front px-2 pt-1 pb-0 transition-all hover:rounded-none">
               <h1 className="font-display text-xl text-back sm:text-2xl md:text-3xl lg:text-4xl">
@@ -22,14 +22,13 @@ export default function Header() {
           </Link>
           {steps.map((step, idx) => {
             return (
-              <Link key={idx} href={"/" + step}>
-                <h2 className="font-serif italic sm:text-lg md:text-xl lg:text-2xl">
-                  <span className="px-2 not-italic md:px-3">{"/"}</span>
-                  <span className="whitespace-nowrap hover:underline">
-                    {paths[idx]}
-                  </span>
-                </h2>
-              </Link>
+              <div className="ml-1 grid items-center rounded-2xl border-2 border-front px-1.5 py-0.5 transition-all hover:rounded-none">
+                <Link key={idx} href={"/" + step}>
+                  <h2 className="font-serif text-sm italic sm:text-lg md:text-xl lg:text-2xl">
+                    <span className="whitespace-nowrap">{paths[idx]}</span>
+                  </h2>
+                </Link>
+              </div>
             );
           })}
         </div>
