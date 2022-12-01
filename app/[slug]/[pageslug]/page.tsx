@@ -21,7 +21,7 @@ const Page = ({ params }: { params: any }) => {
   );
 
   const DynamicLayout: ComponentType<LayoutType> = dynamic(
-    () => import("../../../components/layouts/" + style),
+    () => import("./layouts/" + style),
     {
       suspense: true,
     }
