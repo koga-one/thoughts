@@ -1,9 +1,18 @@
-import { client } from "../sanityClient";
-import { NextPage } from "next";
-import { use } from "react";
-import BookPage from "../../components/BookPage";
-import { PortableText } from "@portabletext/react";
+"use client";
 
+import { ComponentType, Suspense, use } from "react";
+import { client } from "../sanityClient";
+import dynamic from "next/dynamic";
+import { NextPage } from "next";
+
+type LayoutType = {
+  pages: any[];
+  title: string;
+  description: any;
+  slug: string;
+  pageIdx: number;
+  postsPerPage: number;
+};
 const postsPerPage = 15;
 
 type Props = {
@@ -17,33 +26,33 @@ const Page: NextPage<Props> = ({ params, searchParams }) => {
 
   if (!isNaN(parseInt(searchParams["page"]))) pageIdx = searchParams["page"];
 
-  let { description, pages, title } = use(
+  let { description, pages, title, style } = use(
     client.fetch(
-      `*[_type == "book" && slug.current == $slug][0]{title, description, pages[]->}`,
+      `*[_type == "book" && slug.current == $slug][0]{title, style, description, pages[]->}`,
       {
         slug,
       }
     )
   );
   pages = pages.slice(pageIdx * postsPerPage, (pageIdx + 1) * postsPerPage);
+  const DynamicLayout: ComponentType<LayoutType> = dynamic(
+    () => import("./layouts/" + style),
+    {
+      suspense: true,
+    }
+  );
 
   return (
-    <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-6">
-      <div className="prose prose-base col-span-2 max-w-none overflow-hidden rounded bg-front px-3 py-4 text-back prose-headings:font-serif prose-headings:text-back md:col-span-4 lg:col-span-6 lg:prose-lg">
-        <h1>{title}</h1>
-        <PortableText value={description} />
-      </div>
-      {pages.map((post: any, idx: number) => {
-        return (
-          <BookPage
-            slug={slug}
-            key={idx}
-            data={post}
-            idx={1 + pageIdx * postsPerPage + idx}
-          />
-        );
-      })}
-    </div>
+    <Suspense fallback={`Loading...`}>
+      <DynamicLayout
+        pages={pages}
+        title={title}
+        description={description}
+        slug={slug}
+        pageIdx={pageIdx}
+        postsPerPage={postsPerPage}
+      />
+    </Suspense>
   );
 };
 
