@@ -3,7 +3,6 @@
 import { ComponentType, Suspense, use } from "react";
 import { client } from "../sanityClient";
 import dynamic from "next/dynamic";
-import { NextPage } from "next";
 
 type LayoutType = {
   pages: any[];
@@ -20,7 +19,7 @@ type Props = {
   searchParams: any;
 };
 
-const Page: NextPage<Props> = ({ params, searchParams }) => {
+const Page = ({ params, searchParams }: Props) => {
   const slug = params.slug;
   let pageIdx = 0;
 

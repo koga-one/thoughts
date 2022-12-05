@@ -65,7 +65,7 @@ export default function laqBook({
           >
             <PortableText value={post.pieces[0].text} components={components} />
             <div className="prose-sm relative mx-auto p-3 text-[#eee] prose-headings:font-serif prose-headings:text-[#eee] sm:p-4 md:p-5 lg:prose-base">
-              <h1 className="relative">
+              <h1 className="relative font-semibold">
                 <span className="absolute left-0 -translate-x-full opacity-20">
                   {post.title}
                 </span>
