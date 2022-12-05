@@ -99,8 +99,8 @@ export default function laq({ post }: { post: any }) {
         </time>
       </div>
       <div className="bg-front">
-        <p className="m-0 px-2 py-1 text-center text-xs font-bold uppercase italic text-back">
-          ...each fragment has a song that is somehow connected to it...
+        <p className="m-0 py-1.5 px-2 text-center text-xs text-back opacity-50">
+          it's all art ~ (✿◡‿◡)
         </p>
       </div>
     </section>
