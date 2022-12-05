@@ -12,14 +12,14 @@ type LayoutType = {
   pageIdx: number;
   postsPerPage: number;
 };
-const postsPerPage = 15;
+const postsPerPage = 6;
 
-type PageProps = {
+type Props = {
   params: any;
   searchParams: any;
 };
 
-const Page = ({ params, searchParams }: PageProps) => {
+const Page = ({ params, searchParams }: Props) => {
   const slug = params.slug;
   let pageIdx = 0;
 

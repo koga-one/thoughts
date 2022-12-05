@@ -35,7 +35,7 @@ export default function laqBook({
 }) {
   return (
     <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-6">
-      <div className="prose prose-base col-span-2 max-w-none overflow-hidden rounded-xl bg-[#000] px-3 py-4 text-back prose-headings:font-serif prose-headings:text-back md:col-span-4 lg:col-span-6 lg:prose-lg">
+      <div className="prose prose-base col-span-2 max-w-none overflow-hidden rounded-xl bg-[#000] px-3 py-4 text-back prose-headings:font-serif prose-headings:text-[#eee] md:col-span-4 lg:col-span-6 lg:prose-lg">
         <h1 className="relative">
           <span className="absolute left-0 -translate-x-full opacity-20">
             {title}
@@ -56,16 +56,21 @@ export default function laqBook({
         </h1>
         <PortableText value={description} />
       </div>
+      <div className="col-span-2 rounded-xl bg-front md:col-span-4 lg:col-span-6">
+        <p className="py-1 text-center text-sm font-semibold uppercase italic text-back opacity-50">
+          click on the pages below to check my posts!
+        </p>
+      </div>
       {pages.map((post: any, idx: number) => {
         return (
           <Link
-            className="col-span-2 overflow-hidden rounded-xl bg-[#000]"
+            className="col-span-2 overflow-hidden rounded-2xl border-2 border-[#fff] bg-[#000]"
             key={idx}
             href={slug + "/" + post.slug.current}
           >
             <PortableText value={post.pieces[0].text} components={components} />
             <div className="prose-sm relative mx-auto p-3 text-[#eee] prose-headings:font-serif prose-headings:text-[#eee] sm:p-4 md:p-5 lg:prose-base">
-              <h1 className="relative font-semibold">
+              <h1 className="relative whitespace-nowrap font-semibold">
                 <span className="absolute left-0 -translate-x-full opacity-20">
                   {post.title}
                 </span>
@@ -83,10 +88,6 @@ export default function laqBook({
                   {post.title}
                 </span>
               </h1>
-              <PortableText
-                value={post.pieces[1].text}
-                components={components}
-              />
             </div>
           </Link>
         );
