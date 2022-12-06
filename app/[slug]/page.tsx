@@ -3,6 +3,7 @@
 import { ComponentType, Suspense, use } from "react";
 import { client } from "../sanityClient";
 import dynamic from "next/dynamic";
+import { useSearchParams } from "next/navigation";
 
 type LayoutType = {
   pages: any[];
@@ -12,18 +13,12 @@ type LayoutType = {
   pageIdx: number;
   postsPerPage: number;
 };
+
 const postsPerPage = 6;
 
-type Props = {
-  params: any;
-  searchParams: any;
-};
-
-const Page = ({ params, searchParams }: Props) => {
+const Page = ({ params }: { params: any }) => {
   const slug = params.slug;
-  let pageIdx = 0;
-
-  if (!isNaN(parseInt(searchParams["page"]))) pageIdx = searchParams["page"];
+  let pageIdx: number = parseInt(useSearchParams().get("page") || "0");
 
   let { description, pages, title, style } = use(
     client.fetch(
