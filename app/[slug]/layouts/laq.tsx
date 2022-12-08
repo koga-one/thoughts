@@ -23,15 +23,11 @@ export default function laqBook({
   title,
   description,
   slug,
-  pageIdx,
-  postsPerPage,
 }: {
   pages: any[];
   title: string;
   description: any;
   slug: string;
-  pageIdx: number;
-  postsPerPage: number;
 }) {
   return (
     <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-6">

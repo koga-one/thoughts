@@ -4,22 +4,18 @@ import { ComponentType, Suspense, use } from "react";
 import { client } from "../sanityClient";
 import dynamic from "next/dynamic";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 type LayoutType = {
   pages: any[];
   title: string;
   description: any;
   slug: string;
-  pageIdx: number;
-  postsPerPage: number;
 };
-
-const postsPerPage = 6;
 
 const Page = ({ params }: { params: any }) => {
   const slug = params.slug;
   let pageIdx: number = parseInt(useSearchParams().get("page") || "0");
-
   let { description, pages, title, style } = use(
     client.fetch(
       `*[_type == "book" && slug.current == $slug][0]{title, style, description, pages[]->}`,
@@ -28,7 +24,6 @@ const Page = ({ params }: { params: any }) => {
       }
     )
   );
-  pages = pages.slice(pageIdx * postsPerPage, (pageIdx + 1) * postsPerPage);
   const DynamicLayout: ComponentType<LayoutType> = dynamic(
     () => import("./layouts/" + style),
     {
@@ -43,8 +38,6 @@ const Page = ({ params }: { params: any }) => {
         title={title}
         description={description}
         slug={slug}
-        pageIdx={pageIdx}
-        postsPerPage={postsPerPage}
       />
     </Suspense>
   );
