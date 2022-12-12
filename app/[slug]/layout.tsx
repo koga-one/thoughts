@@ -27,7 +27,7 @@ export default function Layout({
   );
   return (
     <div className="relative flex flex-col justify-center gap-1 md:flex-row">
-      <div className="contents md:block">
+      <div>
         <nav className="sticky top-1 z-50 mb-1 flex flex-row flex-wrap gap-1 md:flex-col">
           <Link className="flex-grow md:flex-grow-0" href={slug}>
             <p className="rounded border-2 border-front bg-back px-1.5 py-0.5 font-medium text-front">
