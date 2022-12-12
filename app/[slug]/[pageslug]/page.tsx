@@ -28,7 +28,7 @@ const Page = ({ params }: { params: any }) => {
   );
 
   return (
-    <Suspense fallback={`Loading...`}>
+    <Suspense>
       <DynamicLayout post={post} />
     </Suspense>
   );
