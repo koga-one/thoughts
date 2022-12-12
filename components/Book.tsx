@@ -13,14 +13,14 @@ function urlFor(source: any) {
 export default function Book({ data }: { data: any }) {
   return (
     <Link href={data.slug.current}>
-      <div className="relative grid aspect-[3/4] items-end overflow-hidden rounded-2xl border-2 border-[#fff] bg-front text-back">
+      <div className="relative grid aspect-[3/4] items-end overflow-hidden rounded-2xl border-2 border-front bg-front text-back">
         <Image
-          src={urlFor(data.image).width(500).url()}
+          src={urlFor(data.image).width(600).height(800).url()}
           layout="fill"
           alt="Book cover"
         />
-        <div className="z-50 mt-1.5 rounded-xl bg-front">
-          <h2 className="py-0.5 text-center font-serif text-lg text-[#eee]">
+        <div className="z-50 m-0.5 rounded-xl bg-front">
+          <h2 className="py-0.5 text-center font-serif text-lg font-medium text-[#eee]">
             {data.title}
           </h2>
         </div>
