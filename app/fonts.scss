@@ -294,3 +294,58 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/firacode/FiraCode-Medium.woff2") format("woff2"),
+    url("/fonts/firacode/FiraCode-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code Retina";
+  src: url("/fonts/firacode/FiraCode-Retina.woff2") format("woff2"),
+    url("/fonts/firacode/FiraCode-Retina.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/firacode/FiraCode-Bold.woff2") format("woff2"),
+    url("/fonts//fonts/firacode/FiraCode//fonts/firacode/FiraCode-Bold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/firacode/FiraCode-Light.woff2") format("woff2"),
+    url("/fonts/firacode/FiraCode-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/firacode/FiraCode-Regular.woff2") format("woff2"),
+    url("/fonts/firacode/FiraCode-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/firacode/FiraCode-SemiBold.woff2") format("woff2"),
+    url("/fonts/firacode/FiraCode-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

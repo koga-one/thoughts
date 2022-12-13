@@ -15,6 +15,7 @@ module.exports = {
       serif: ["Alvarado", "serif"],
       display: ["Dalfitra", "serif"],
       sans: ["Haskoy", "sans-serif"],
+      mono: ["Fira Code", "monospace"],
     },
   },
   plugins: [require("@tailwindcss/typography")],
